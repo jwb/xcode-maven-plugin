@@ -12,7 +12,7 @@ import au.com.rayh.XcodeBuildOutputParser;
  * Run the build with tests.
  * @author John Bito <jwbito@gmail.com>
  *
- * @goal xcodetest
+ * @goal test
  * @requiresDependencyResolution
  */
 public class XCodeTestMojo extends XCodeBuildMojo 
