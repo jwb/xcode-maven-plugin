@@ -24,6 +24,7 @@ public class XCodeTestMojo extends XCodeBuildMojo
     destDir.mkdirs();
 	PrintStream origOut = ctx.getOut(),
 			  out = new PrintStream(new XcodeBuildOutputParser(destDir, origOut).getOutputStream());
+	out.println("maven-xcode-plugin:test - is this working?");
 	ctx.setOut(out);
 	try {
       xcodeMgr.callXcodeBuild(ctx, configuration, sdk, true);
